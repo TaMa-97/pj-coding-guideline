@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "guidelines": "ガイドライン",
+  "naming": "命名規則",
   "about": {
     "title": "About",
     "type": "page"
