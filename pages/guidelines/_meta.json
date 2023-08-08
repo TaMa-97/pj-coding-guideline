@@ -1,0 +1,9 @@
+{
+  "supported": "対応ブラウザ",
+  "html": "HTML",
+  "css": "CSS",
+  "javascript": "JavaScript",
+  "accessibility": "アクセシビリティ",
+  "seo": "SEO",
+  "performance": "パフォーマンス"
+}
