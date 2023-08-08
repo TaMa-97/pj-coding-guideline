@@ -1,9 +1,5 @@
 {
   "index": "イントロダクション",
   "guidelines": "ガイドライン",
-  "naming": "命名規則",
-  "about": {
-    "title": "About",
-    "type": "page"
-  }
+  "naming": "命名規則"
 }
