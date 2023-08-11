@@ -1,7 +1,6 @@
 {
-  "name": "nextra-docs-template",
-  "private": true,
-  "version": "1.0.0",
+  "name": "pj-coding-guideline",
+  "version": "0.0.1",
   "description": "コーディングガイドライン",
   "scripts": {
     "dev": "next dev",
@@ -12,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/TaMa-97/pj-coding-guideline.git"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/shuding/nextra-docs-template/issues"
   },
