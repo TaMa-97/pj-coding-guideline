@@ -1,7 +1,8 @@
 {
   "name": "nextra-docs-template",
-  "version": "0.0.1",
-  "description": "Nextra docs template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "コーディングガイドライン",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,10 +10,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/TaMa-97/pj-coding-guideline.git"
   },
-  "author": "Shu Ding <g@shud.in>",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/shuding/nextra-docs-template/issues"
   },
@@ -22,7 +22,8 @@
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remark-emoji": "3.1.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
