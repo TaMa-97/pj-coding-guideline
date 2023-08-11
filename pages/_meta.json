@@ -1,5 +1,14 @@
 {
-  "index": "イントロダクション",
-  "guidelines": "ガイドライン",
-  "naming": "命名規則"
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
+  "guidelines": {
+    "title": "ガイドライン",
+    "type": "page"
+  },
+  "naming": {
+    "title": "命名規則",
+    "type": "page"
+  }
 }
