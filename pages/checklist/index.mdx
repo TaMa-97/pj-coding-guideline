@@ -1,3 +1,29 @@
-# チェックリスト
+# MDX：Markdown + JSX
 
-## 概要
+## シンタックスハイライト
+
+```js filename="demo.js" {3} copy
+let a = 1;
+
+console.log(a);
+```
+
+## コンポーネント
+
+import { useState } from "react";
+
+{/* Import CSS modules */}
+import styles from '../../components/hoge.module.css'
+
+export const Hoge = () => {
+  const [hoge, setHoge] = useState(0);
+  return (
+    <div>
+      <button onClick={() => setHoge(hoge + 1)} className={styles.hoge}>
+        Clicked {hoge} times
+      </button>
+    </div>
+  );
+};
+
+<Hoge />

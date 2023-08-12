@@ -1,24 +1,24 @@
 // Example from https://beta.reactjs.org/learn
 
-import { useState } from 'react'
-import styles from './counters.module.css'
+import { useState } from "react";
+import styles from "./hoge.module.css";
 
-function MyButton() {
-  const [count, setCount] = useState(0)
+function MyHoge() {
+  const [hoge, setHoge] = useState(0);
 
   function handleClick() {
-    setCount(count + 1)
+    setHoge(hoge + 1);
   }
 
   return (
     <div>
-      <button onClick={handleClick} className={styles.counter}>
-        Clicked {count} times
+      <button onClick={handleClick} className={styles.hoge}>
+        Clicked {hoge} times
       </button>
     </div>
-  )
+  );
 }
 
 export default function MyApp() {
-  return <MyButton />
+  return <MyHoge />;
 }
