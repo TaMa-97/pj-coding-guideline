@@ -10,5 +10,9 @@
   "naming": {
     "title": "命名規則",
     "type": "page"
+  },
+  "checklist": {
+    "title": "チェックリスト",
+    "type": "page"
   }
 }
