@@ -1,21 +1,18 @@
-# MDX：Markdown + JSX
-
-## シンタックスハイライト
-
-```js filename="demo.js" {3} copy
-let a = 1;
-
-console.log(a);
-```
+# Nextra：MDX メモ
 
 ## JSX
 
+### インライン JSX
+
+```
 <div style={{ padding: "50px", color: "red" }}>
   <h2>HogeHoge</h2>
 </div>
+```
 
-## コンポーネント
+### React コンポーネント
 
+```
 import { useState } from "react";
 
 {/* Import CSS modules */}
@@ -26,16 +23,137 @@ export const Hoge = () => {
   return (
     <div>
       <button onClick={() => setHoge(hoge + 1)} className={styles.hoge}>
-        Clicked {hoge} times
+        クリック数： {hoge} 回
       </button>
     </div>
   );
 };
+```
 
-<Hoge />
-
-## 外部コンポーネント
-
+```
 import MyHoge from "../../components/hoge";
 
 <MyHoge />
+```
+
+## 通常のマークダウン
+
+```
+# h1
+## h2
+### h3...
+```
+
+## マークダウン([GFM](https://github.github.com/gfm/))
+
+### オートリンク
+
+https://hogehoge.com
+
+### テーブル
+
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
+| aa  | bb  |  cc | dd  |
+
+### タスクリスト
+
+- [ ] to do
+- [x] done
+
+## シンタックスハイライト([shiki](https://shiki.matsu.io/))
+
+```js filename="hoge.js"
+let hoge = 1;
+console.log(hoge);
+```
+
+### 強調:行
+
+```js {1-2}
+let hoge = 1;
+console.log(hoge);
+```
+
+## 強調:文字列
+
+```js /hoge/
+let hoge = 1;
+console.log(hoge);
+```
+
+## コピー
+
+```js copy
+let hoge = 1;
+console.log(hoge);
+```
+
+## 組み込みコンポーネント
+
+### コールアウト
+
+import { Callout } from "nextra/components";
+
+<Callout emoji="💡">Default</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  info
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+  warning
+</Callout>
+
+<Callout type="error" emoji="️🚫">
+  error
+</Callout>
+
+### タブ
+
+import { Tabs, Tab } from "nextra/components";
+
+<Tabs items={["タブ01", "タブ02", "タブ03"]}>
+  <Tab>**タブ01**: タブ01コンテンツ</Tab>
+  <Tab>**タブ02**: タブ02コンテンツ</Tab>
+  <Tab>**タブ03**: タブ03コンテンツ</Tab>
+</Tabs>
+
+<Tabs items={["タブ01", "タブ02", "タブ03"]} defaultIndex="1">
+  <Tab>**タブ01**: タブ01コンテンツ</Tab>
+  <Tab>**タブ02**: タブ02コンテンツ</Tab>
+  <Tab>**タブ03**: タブ03コンテンツ</Tab>
+</Tabs>
+
+### カード
+
+import { Cards, Card } from "nextra/components";
+
+<Cards>
+  <Card title="カード01" href="#" />
+  <Card title="カード02" href="#" />
+  <Card title="カード03" href="#" />
+</Cards>
+
+### ステップ
+
+import { Steps } from "nextra/components";
+
+<Steps>### Step 1 Step 1コンテンツ ### Step 2 Step 2コンテンツ</Steps>
+
+### ファイルツリー
+
+import { FileTree } from 'nextra/components'
+ 
+<FileTree>
+  <FileTree.Folder name="pages" defaultOpen>
+    <FileTree.File name="_meta.json" />
+    <FileTree.File name="index.mdx" />
+    <FileTree.Folder name="hoge">
+      <FileTree.File name="_meta.json" />
+      <FileTree.File name="index.mdx" />
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree
+
+>
